@@ -1,0 +1,68 @@
+
+
+$myRideRed:#DF0424;
+$myRideYellow:#F0EE09;
+$myRideBlack:#121212;
+$white:#ffffff;
+
+
+
+.login_form{
+    margin:300px auto;
+    text-align: center;
+    .logo{
+        width: 163px;
+        margin: 0px auto 60px;
+        text-align: center;
+    }
+    .box{
+        width: 500px;
+        margin: 0px auto 30px;
+        height: 60px;
+    }
+    .box:focus-visible {
+        box-shadow: none;
+    }
+    
+    .passBox{
+        border-right: none;
+        border-left: none;
+    }
+    .btn-login{
+        width: 334px;
+        height: 42px;
+        background-color: $myRideRed;
+        color: $white;
+        border: none;
+    }
+    .icon{
+        border-right: none;
+        color: $myRideRed;
+    }
+    .fa_addon{
+        background-color: $white;
+        border-right: none;
+    }
+    .form_area{
+        background-color:$white;
+        border-left: none;
+    }
+    .pass_toogle{
+        background-color: $white;
+        border-left: none;
+    }
+    .disabled{
+        color: grey;
+    }
+}
+
+.sideBar{
+    background-color: $myRideRed;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.main{
+    background-color: $myRideYellow;
+}
