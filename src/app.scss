@@ -4,8 +4,10 @@ $myRideRed:#DF0424;
 $myRideYellow:#F0EE09;
 $myRideBlack:#121212;
 $white:#ffffff;
+$grey:rgb(182, 182, 182);
 
-
+$fontFamily:'Roboto', sans-serif;
+$shadowRed:1px 12px 67px -19px rgba(117, 117, 117, 0.562);
 
 .login_form{
     margin:300px auto;
@@ -62,7 +64,149 @@ $white:#ffffff;
     position: fixed;
     top: 0;
     left: 0;
+    background: rgba(255, 255, 255, 0.19);
+    text-align: center;
+    border-right: 9px solid $myRideYellow;
+    height: 100vh;
+    img{
+        width: 170px;
+        margin: 50px auto;
+    }
+    .nav-items{
+        
+        ul{
+            list-style: none;
+            text-decoration: none;
+            text-align: left;
+            color: $myRideBlack;
+            padding: 0px;
+            margin: 0px;
+            li{
+                padding: 10px 10px 10px 50px;
+                width: calc(100% + 9px) ;
+                
+                a{
+                    width: 100%;
+                    text-decoration: none;
+                    color: $myRideBlack;
+                    font-family: inherit;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.3rem;
+                    line-height: 28px;
+                    
+                    .icon{
+                        width: 40px;
+                        text-align: left;
+                        display: inline-block;
+                        margin: none;
+                    }
+                    .title{
+                        display: inline;
+                        width: 100%;
+                        margin: none;
+                    }
+                }
+            }
+            li:hover{
+                a{
+                    color: $myRideRed;
+                }
+                background-color: $white;
+                border-right: 9px solid $myRideBlack;
+                
+
+            }
+            
+        }
+    }
 }
-.main{
-    background-color: $myRideYellow;
+.topMenu{
+    height: 82px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 998;
+    background-color: $white;
+    width:100vw;
+    box-shadow:$shadowRed ;
+
+    .topMenuItems{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin: 0px 0px 0px auto;
+        .searchBar{
+            width: 500px;
+            padding: 30px;
+            svg{
+                font-size: 1.5rem;
+                color: $grey;
+                margin-left: -50px;
+                padding-top: 5px;
+            }
+            .searchBox{
+                border: 0px solid $grey;
+                border-bottom: 1px solid $grey;
+                border-radius: 5px;
+                width: 400px;
+                height: 40px;
+            }
+            .searchBox:active{
+                border: 1px solid $grey!important;
+
+            }
+        }
+        .UserDetails{
+            height: 100%;
+            width: 300px;
+            padding: 20px;
+
+            .userDp{
+                background-position: center;
+                background-size: contain;
+            }
+            .UserName{
+                font-family: inherit;
+                font-weight: 900;
+                display: block;
+                margin-top: 5px;
+            }
+            .UserType{
+                display: block;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+            }
+        }
+        .signOut{
+            padding: 30px;
+            height: 100%;
+            width: 200px;
+            .signOutBtn{
+                text-decoration: none;
+                color: $myRideBlack;
+                font-size: 1.3rem;  
+            }
+            
+        }
+    }
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .sideBar {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+      z-index: 999;
+    }
+    .warning {
+      display: none;
+    }
+  }
+body{
+    background-image: url("https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"),rgba(255, 255, 255, 0.5); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $fontFamily;
 }

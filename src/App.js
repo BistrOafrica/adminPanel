@@ -1,27 +1,18 @@
 import React from 'react';
-import LogIn from './LogIn';
-import MainPage from './MainPage';
+import LogIn from './Admin/LogIn';
+import MainPage from './Admin/MainPage';
 import './app.scss';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 
 function App() {
-  const loggedIn = false
+  const loggedIn = true
 
   return (
     <>
 
     {loggedIn ? <MainPage /> :<LogIn />}
 
-    <Router>
-      <Switch>
-        <Route path='/'/>
-      </Switch>
-      
-    </Router>
-    
-    
     </>
   );
 }
