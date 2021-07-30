@@ -7,10 +7,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import { faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-import logo from '../logo.svg';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
+import {Link, BrowserRouter as Router} from 'react-router-dom';
+import logo from '../logo.svg'
 
-export default function LogIn() {
+
+function SignIn() {
+    
     return (
         <>
             
@@ -37,12 +40,17 @@ export default function LogIn() {
                     />
                     <InputGroup.Text className="pass_toogle" id="basic-addon1"><FontAwesomeIcon className="icon disabled" icon={faEyeSlash}/> </InputGroup.Text>
             </InputGroup>
-            <Button variant="primary" type="submit" className="btn-login" >
-                Login
-            </Button>
+            <Router>
+            <Link to='/LiveMap'>
+                <Button variant="primary" type="submit" className="btn-login" >
+                    Login
+                </Button>
+            </Link>
+            </Router>
             </Form>
             </>
 
 
     )
 }
+export default SignIn

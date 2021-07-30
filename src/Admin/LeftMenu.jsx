@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { MenuItems } from './MenuItems'
 
 
@@ -12,12 +13,16 @@ function LeftMenu() {
             <ul>
             {MenuItems.map((item,index)=>{
                 return(
-                    <li key={index} className={item.cName} >
+                    
+                        <Link to={item.path} >
+                        <li key={index} className={item.cName} >
                         <a href={item.path}>
                             <div className="icon">{item.icon}</div>
                             <span className="title">{item.title}</span>
                         </a>
                     </li> 
+                    </Link>
+                    
                 )
             })} 
             </ul>

@@ -53,8 +53,8 @@ export const MenuItems=[
         cName:'nav-Link'
     },
     {
-        title:'Affiliate',
-        path:'/Affiliate',
+        title:'Referrals',
+        path:'/Referrals',
         icon:<FontAwesomeIcon icon={faUserFriends}/>,
         cName:'nav-Link'
     },

@@ -1,13 +1,15 @@
 import React from 'react';
-import LeftMenu  from './LeftMenu';
-import Logo from '../logo.svg';
-import Simple from './Maps';
+import LeftMenu from './LeftMenu';
 import TopMenu from './TopMenu';
+import Logo from '../logo.svg';
 
 
-export default function MainPage() {
+
+
+export default function Menus() {
     return (
         <>
+        
         <div className="sideBar">
             <img src={Logo} alt="myride.ke"/>
             <LeftMenu />
@@ -15,10 +17,7 @@ export default function MainPage() {
         <div className="topMenu">
             <TopMenu />
         </div>
-        <div className="map">
-            <Simple />
-        </div>
-        
+
         </>
     )
 }

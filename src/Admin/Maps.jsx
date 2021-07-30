@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-class SimpleMap extends Component {
+
+const Pins = () => <FontAwesomeIcon
+      icon={faMapMarkerAlt}
+      style={{color:'#4BB543',fontSize:'2.0rem'}}
+      />;
+
+class Map extends Component {
     
   static defaultProps = {
     center: {
@@ -11,8 +18,9 @@ class SimpleMap extends Component {
       lng: 36.82254641475028
     },
     zoom: 11,
-    mapId: 'fef77ff2bbc70f2b'
+    mapId: 'fef77ff2bbc70f2b',
   };
+
 
   render() {
     return (
@@ -22,15 +30,15 @@ class SimpleMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text="My Marker"
-          />
+        <Pins 
+            lat={-1.2917532274184966}
+            lng={36.82254641475028}
+        />
+          
         </GoogleMapReact>
       </div>
     );
   }
 }
 
-export default SimpleMap;
+export default Map;
