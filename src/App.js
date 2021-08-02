@@ -42,7 +42,7 @@ const LoggedIn=true
           <Route path='/Settings' component={Settings} />
           <Route path='/Statistics' component={Statistics} />
           <Route path='/Referrals' component={Referrals} />
-          <Route path='/DashBoard' component={DashBoard} />
+          <Route path='/' component={DashBoard} />
         </Switch>
       </div>
     </Router>:<SignIn />}

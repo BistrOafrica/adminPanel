@@ -14,7 +14,7 @@ function LeftMenu() {
             {MenuItems.map((item,index)=>{
                 return(
                     
-                        <Link to={item.path} >
+                        <Link to={item.path} className="link">
                         <li key={index} className={item.cName} >
                         <a href={item.path}>
                             <div className="icon">{item.icon}</div>

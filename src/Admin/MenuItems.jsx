@@ -18,7 +18,7 @@ export const MenuItems=[
     },
     {
         title:'Dashboard',
-        path:'/Dashboard',
+        path:'/',
         icon:<FontAwesomeIcon icon={faTh}/>,
         cName:'nav-Link'
     },
