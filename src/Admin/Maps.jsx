@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
-const Pins = () => <FontAwesomeIcon
-      icon={faMapMarkerAlt}
-      style={{color:'#4BB543',fontSize:'2.0rem'}}
-      />;
+//const Pins = () => <FontAwesomeIcon
+//      icon={faMapMarkerAlt}
+//      style={{color:'#4BB543',fontSize:'2.0rem'}}
+//      />;
 
 class Map extends Component {
     
@@ -30,10 +30,7 @@ class Map extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-        <Pins 
-            lat={-1.2917532274184966}
-            lng={36.82254641475028}
-        />
+        
           
         </GoogleMapReact>
       </div>

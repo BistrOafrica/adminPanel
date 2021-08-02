@@ -23,9 +23,6 @@ $shadowRed:1px 12px 67px -19px rgba(117, 117, 117, 0.562);
         margin: 0px auto 30px;
         height: 60px;
     }
-    .box:focus-visible {
-        box-shadow: none;
-    }
     
     .passBox{
         border-right: none;
@@ -71,7 +68,7 @@ $shadowRed:1px 12px 67px -19px rgba(117, 117, 117, 0.562);
     height: 100vh;
     img{
         width: 170px;
-        margin: 50px auto;
+        margin: 20px auto;
     }
     .nav-items{
         
@@ -82,7 +79,7 @@ $shadowRed:1px 12px 67px -19px rgba(117, 117, 117, 0.562);
             padding: 0px;
             margin: 0px;
             li{
-                padding: 10px 10px 10px 50px;
+                padding: 10px 10px 10px 60px;
                 width: calc(100% + 9px) ;
                 list-style: none;
                 text-transform: none;
@@ -209,11 +206,76 @@ $shadowRed:1px 12px 67px -19px rgba(117, 117, 117, 0.562);
     .warning {
       display: none;
     }
-  }
+}
+.DispatchForm{
+    width: 400px;
+    height: 700px;
+    background-color: $white;
+    z-index: 997;
+    top: 200px;
+    left: 400px;
+    position: fixed;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: $shadowRed;
+
+}
 
 body{
     background-color: $ghostWhite;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: $fontFamily;
+}
+.logo{
+    width: 163px;
+    margin: 0px auto 60px;
+    text-align: center;
+}
+.box{
+    width: 500px;
+    margin: 0px auto 30px;
+    height: 60px;
+}
+.box:focus-visible {
+    box-shadow: none;
+}
+
+.passBox{
+    border-right: none;
+    border-left: none;
+}
+.btn-login{
+    width: 334px;
+    height: 42px;
+    background-color: $myRideRed;
+    color: $white;
+    border: none;
+}
+
+.fa_addon{
+    background-color: $white;
+    border-right: none;
+    text-align: center;
+}
+.form_area{
+    background-color:$white;
+    border-left: none;
+}
+.pass_toogle{
+    background-color: $white;
+    border-left: none;
+}
+.disabled{
+    color: grey;
+}
+.inputGroup{
+    margin: 10px 0px;
+}
+.FormHeading{
+    font-family: inherit;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 1.5rem;
 }
