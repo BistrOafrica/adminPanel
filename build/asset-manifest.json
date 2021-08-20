@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/adminpanel.myride.ke/static/css/main.2a1c3275.chunk.css",
-    "main.js": "/adminpanel.myride.ke/static/js/main.c38acbf3.chunk.js",
-    "main.js.map": "/adminpanel.myride.ke/static/js/main.c38acbf3.chunk.js.map",
-    "runtime-main.js": "/adminpanel.myride.ke/static/js/runtime-main.13948c61.js",
-    "runtime-main.js.map": "/adminpanel.myride.ke/static/js/runtime-main.13948c61.js.map",
-    "static/js/2.d9222d4a.chunk.js": "/adminpanel.myride.ke/static/js/2.d9222d4a.chunk.js",
-    "static/js/2.d9222d4a.chunk.js.map": "/adminpanel.myride.ke/static/js/2.d9222d4a.chunk.js.map",
-    "index.html": "/adminpanel.myride.ke/index.html",
-    "static/css/main.2a1c3275.chunk.css.map": "/adminpanel.myride.ke/static/css/main.2a1c3275.chunk.css.map",
-    "static/js/2.d9222d4a.chunk.js.LICENSE.txt": "/adminpanel.myride.ke/static/js/2.d9222d4a.chunk.js.LICENSE.txt",
-    "static/media/logo.086664b7.svg": "/adminpanel.myride.ke/static/media/logo.086664b7.svg"
+    "main.css": "/static/css/main.2a1c3275.chunk.css",
+    "main.js": "/static/js/main.c38acbf3.chunk.js",
+    "main.js.map": "/static/js/main.c38acbf3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.56270593.js",
+    "runtime-main.js.map": "/static/js/runtime-main.56270593.js.map",
+    "static/js/2.d9222d4a.chunk.js": "/static/js/2.d9222d4a.chunk.js",
+    "static/js/2.d9222d4a.chunk.js.map": "/static/js/2.d9222d4a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2a1c3275.chunk.css.map": "/static/css/main.2a1c3275.chunk.css.map",
+    "static/js/2.d9222d4a.chunk.js.LICENSE.txt": "/static/js/2.d9222d4a.chunk.js.LICENSE.txt",
+    "static/media/logo.086664b7.svg": "/static/media/logo.086664b7.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.13948c61.js",
+    "static/js/runtime-main.56270593.js",
     "static/js/2.d9222d4a.chunk.js",
     "static/css/main.2a1c3275.chunk.css",
     "static/js/main.c38acbf3.chunk.js"
