@@ -16,10 +16,10 @@ function LeftMenu() {
                     
                         <Link to={item.path} className="link">
                         <li key={index} className={item.cName} >
-                        <a href={item.path}>
+                        <div className='a'>
                             <div className="icon">{item.icon}</div>
                             <span className="title">{item.title}</span>
-                        </a>
+                        </div>
                     </li> 
                     </Link>
                     

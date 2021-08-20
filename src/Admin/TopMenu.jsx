@@ -21,7 +21,7 @@ function TopMenu(){
                     </div>
                 </div>
                 <div className="signOut">
-                    <a href="#" className="signOutBtn">
+                    <a href="/" className="signOutBtn">
                         <FontAwesomeIcon icon={faSignOutAlt} />
                         <span className='signOutTxt'>Sign Out</span>
                     </a>

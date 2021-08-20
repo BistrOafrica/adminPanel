@@ -1,4 +1,4 @@
-import React from 'react';
+import React /*,{useState, useEffect }*/from 'react';
 import SignIn from './Admin/LogIn';
 import Menus from './Admin/Menus';
 import './app.scss';
@@ -16,12 +16,12 @@ import Settings from './Admin/Pages/Settings';
 import Statistics from './Admin/Pages/Statistics';
 import Referrals from './Admin/Pages/Referrals';
 import DashBoard from './Admin/Pages/DashBoard';
+import Data from './Admin/Data'
 
 
 
 function App() {
-
-  
+    
 const LoggedIn=true
   return (
     <>
@@ -42,6 +42,7 @@ const LoggedIn=true
           <Route path='/Settings' component={Settings} />
           <Route path='/Statistics' component={Statistics} />
           <Route path='/Referrals' component={Referrals} />
+          <Route path='/DData' component={Data}/>
           <Route path='/' component={DashBoard} />
         </Switch>
       </div>

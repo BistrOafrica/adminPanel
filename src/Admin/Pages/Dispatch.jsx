@@ -2,7 +2,7 @@ import { faMapMarkerAlt, faStopCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Form, FormControl, InputGroup} from 'react-bootstrap';
 import React from 'react-dom';
-import Map from '../Maps';
+import dispatchMap from '../dispatchMap';
 
 
 function DispatchForm(){
@@ -41,7 +41,7 @@ function Dispatch(){
     return(
         <>
             <DispatchForm />
-            <Map />
+            <dispatchMap />
         </>
     );
 }
