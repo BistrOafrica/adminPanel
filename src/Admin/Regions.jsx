@@ -1,10 +1,12 @@
-import React from 'react';
+import React from 'react-dom';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faUserCog} from "@fortawesome/free-solid-svg-icons";
 
 
 export const MenuItems=[
     {
         title:'Nairobi',
-        center:
+        center:''
     },
     {
         title:'Admin',
@@ -13,3 +15,4 @@ export const MenuItems=[
         cName:'nav-Link'
     },
 ]
+export default MenuItems

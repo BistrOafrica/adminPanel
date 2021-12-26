@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarTimes, faClipboardCheck, faMapMarkedAlt, faTaxi, faWifi } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import CityMenu from "./CityMenu";
 
 const cards=[
     {
@@ -30,7 +31,7 @@ const cards=[
         name:'acceptedTrips',
         class:'accepted',
         icon:faClipboardCheck,
-        title:'Accepted Trips',
+        title:'Accepted NotFound',
         type:'col-md-3',
         color:'#008b62',
         content:'27',
@@ -51,7 +52,7 @@ const cards=[
         name:'cancelledTrips',
         class:'cancelled',
         icon:faCalendarTimes,
-        title:'Cancelled Trips',
+        title:'Cancelled NotFound',
         type:'col-md-3',
         color:'#DF0424',
         content:'46',
@@ -65,10 +66,11 @@ export const Overlay=()=>{
     return(
 
         <div className='MapStats'>
-            {cards.map(card=>(
-                <Link to={card.path}>
-                    <div className={card.type +' '+ card.class} style={{color:card.color}}>
-                    <FontAwesomeIcon className='cardIcon' icon={card.icon}/>
+            {cards.map((card,index)=>(
+                <Link key={index} to={card.path}>
+                    <div className={card.type +' '+ card.class} style={{color:card.color,  borderLeft:'9px solid'+card.color,}}>
+                    <div style={{paddingRight:'20px', borderRight:'1px solid #f0f0f0'}} className="faw"><FontAwesomeIcon className='cardIcon' icon={card.icon}/></div>
+
                     <div className='contentBox'>
                         <p className='cardContent'>{card.content}</p>
                         <p className='title'>{card.title}</p>
@@ -76,6 +78,7 @@ export const Overlay=()=>{
                 </div>
                 </Link>
             ))}
+            <CityMenu />
         </div>
     );
 }

@@ -3,15 +3,19 @@ import GoogleMapReact from 'google-map-react';
 import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { DummyData } from './MapDummyData';
-import DriverTag from './DriverSummary';
 import { Overlay } from './Overlay';
-
+import city from './CreateCity';
+import { Link } from 'react-router-dom';
 const Pins = () => <FontAwesomeIcon
       className='animate__animated animate__bounceIn'
       icon={faMapPin}
       style={{color:'#30a800',fontSize:'1.8rem', }}
       />;
 
+const Nairobi= new city('Nairobi','-1.2917532274184966','36.82254641475028','300','65','23','10','34','548932');
+
+let NairobiCity=Nairobi.getCityDetails();
+console.log(NairobiCity.ongoing);
       
 class Map extends Component {
   
@@ -37,12 +41,16 @@ class Map extends Component {
         >
         
         
-        {DummyData.map(driver=>(
-          <Pins
-            lat={driver.vlatitude}
-            lng={driver.vlongitude}
-            onClick={DriverTag(driver.idriverid)}
-            />
+        {DummyData.map((driver, index)=>(
+          
+          <Link 
+          key={index} 
+          to={'/LiveMap/?driver_id='+ driver.idriverid}
+          lat={driver.vlatitude}
+          lng={driver.vlongitude}
+          >
+            <Pins/>
+          </Link>
         ))}
           
         </GoogleMapReact>

@@ -1,222 +1,428 @@
-
-
-$myRideRed:#DF0424;
-$myRideYellow:#F0EE09;
-$myRideBlack:#121212;
+$quBeansBlue:#0054d1;
+$quBeansBlue50:#e5efff;
+$quBeansYellow:#F0EE09;
+$quBeansBlack:#404040;
+$quBeansDarkBlue:#010042;
 $white:#ffffff;
 $ghostWhite:#f5f5f5;
+$body:#f8f8f8;
 $green:#30a800;
 $blue:#007fe7;
 $orange:#ff8800;
+$header:#c7c7c7;
 $teal:#008b62;
 $grey:rgb(128, 128, 128);
-
-$fontFamily:'Roboto', sans-serif;
+$gray:#e7e7e7;
+$fontFamily:'Poppins', sans-serif!important;
 $shadowRed:1px 12px 67px -19px rgba(117, 117, 117, 0.562);
 $shadowRed2:5px 12px 20px -10px rgba(80, 80, 80, 0.377);
+ :root,
+.App {
+    height: 100vh;
+    background-color: $body;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    overflow: hidden;
+}
+.pageTitle{
+    width: 110rem;
+    padding: 30px 30px 30px;
+    border-radius: 10px;
+    background-color: $gray;
+    font-size:1.6rem;
+    font-weight:800;
+    color:lightseagreen;
+}
+.dataTable{
+    height:600px;
+    width: 110rem;
+    margin:40px 0;
+    background-color: $ghostWhite;
 
-.login_form{
-    margin:300px auto;
+}
+.App{
+    padding: 150px 0 0 400px;
+}
+
+.login_form {
+    margin: 20vh auto;
     text-align: center;
-    .logo{
+    background-color: #ffffff;
+    width: 650px;
+    padding: 100px 50px;
+    text-align: center;
+    border-radius: 10px;
+    .logo {
         width: 163px;
-        margin: 0px auto 60px;
+        margin: 0 auto 20px;
         text-align: center;
     }
-    .box{
+    .box {
         width: 500px;
-        margin: 0px auto 30px;
+        margin: 0 auto 30px;
         height: 60px;
     }
-    
-    .passBox{
+    .passBox {
         border-right: none;
         border-left: none;
     }
-    .btn-login{
+    .btn-login {
         width: 334px;
         height: 42px;
-        background-color: $myRideRed;
+        background-color: $quBeansBlue;
         color: $white;
         border: none;
     }
-    .icon{
+    .icon {
         border-right: none;
-        color: $myRideRed;
+        color: $quBeansBlue;
     }
-    .fa_addon{
+    .fa_addon {
         background-color: $white;
         border-right: none;
     }
-    .form_area{
-        background-color:$white;
-        border-left: none;
-    }
-    .pass_toogle{
+    .form_area {
         background-color: $white;
         border-left: none;
     }
-    .disabled{
+    .pass_toggle {
+        background-color: $white;
+        border-left: none;
+    }
+    .disabled {
         color: grey;
     }
 }
 
-.sideBar{
-    background-color: $myRideRed;
-    width: 250px;
+.sideBar::-webkit-scrollbar {
+    //display: none!important;
+    width: 2px;
+}
+
+.sideBar::-webkit-scrollbar-thumb {
+    //display: none!important;
+    width: 2px;
+    max-height: 10px;
+    background: $quBeansBlue;
+}
+
+.sideBar::-webkit-scrollbar-track {
+    //display: none!important;
+    border-radius: 2px;
+    background-color: $gray;
+}
+.MuiDataGrid-virtualScroller::-webkit-scrollbar-track {
+    //display: none!important;
+    border-radius: 2px;
+    background-color: $gray;
+}
+.MuiDataGrid-virtualScroller::-webkit-scrollbar {
+     //display: none!important;
+     width: 2px;
+ }
+
+.MuiDataGrid-virtualScroller::-webkit-scrollbar-thumb {
+    //display: none!important;
+    width: 2px;
+    max-height: 10px;
+    background: $quBeansBlue;
+}
+.sideBar {
+    width: 300px;
     position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
     background-color: $white;
-    z-index: 999;
-    border-right: 9px solid $myRideYellow;
+    z-index: 990;
+    border-right: 1px solid $gray;
     height: 100vh;
-    img{
+    padding: 80px 20px 50px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    img {
         width: 170px;
         margin: 20px 30px;
     }
-    .nav-items{
-        
-        ul{
-            
+    .nav-items {
+        ul {
             text-align: left;
-            padding: 0px;
-            margin: 0px;
-            li{
-                padding: 10px 10px 10px 30px;
-                width: calc(100% + 9px) ;
+            padding: 0 ;
+            margin: 0 ;
+            li {
+                padding: 0 0 0 20px;
+                width: 100%;
                 list-style: none;
                 text-transform: none;
-                
-                
-                .a{
+                border-radius: 10px;
+                .a {
                     width: 100%;
                     text-decoration: none;
-                    color: $grey;
+                    color: $quBeansBlack;
                     font-family: inherit;
-                    font-style: bold;
-                    font-weight: 400;
+                    font-style: normal;
+                    font-weight: 600;
                     font-size: 1rem;
-                    line-height: 28px;
-                    
-                    .icon{
+                    justify-content: flex-start;
+                    text-align: left;
+
+                    .icon {
                         width: 40px;
-                        text-align: left;
+                        height: 40px;
                         display: inline-block;
-                        margin: none;
+                        margin: 0;
+                        color:inherit;
+                        font-size: 1.4rem;
+                        text-align: center!important;
+                        vertical-align: middle;
+                        padding: 6px;
+
                     }
-                    .title{
+                    .title {
                         display: inline;
                         width: 100%;
-                        margin: none;
+                        text-align: left!important;
+                        height: 40px;
+                        padding: 10px 5px;
                     }
-                }
-                a:hover{
-                    color: $myRideBlack;
+
+
                 }
             }
-            li:hover{
-                a{
-                    color: $myRideBlack;
+            li:hover {
+                .a {
+                    color: $quBeansBlack;
                 }
-                background-color: $ghostWhite;
-                border-right: 9px solid $myRideBlack;
-                color: $myRideBlack;
-                
+                background-color: $gray;
 
             }
-            .link{
-                text-decoration: none;
-            }
-            
         }
     }
+    .link {
+        text-decoration: none;
+    }
+    .menuTitle {
+
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 800;
+        background-color: transparent;
+        font-size: 1rem;
+
+    }
+    .titledMenu {
+
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 400;
+        color: #aaaaaa;
+        margin: 20px 30px;
+        background-color: transparent;
+        font-size: 0.9rem;
+
+    }
 }
-.topMenu{
-    height: 82px;
-    position:fixed;
-    top:0;
-    left:0;
+.active{
+    color: #0063ff!important;
+    background-color: $quBeansBlue50;
+    border-radius: 10px;
+    &:hover{
+        .a{
+            color: #404040!important;
+        }
+    }
+    .a{
+        color: #0063ff!important;
+    }
+    svg{
+        color:#0063ff!important;
+    }
+}
+.css-kq5zgn-MuiButtonBase-root-MuiAccordionSummary-root{
+    padding: 0!important;
+}
+.css-ta84vm-MuiAccordionDetails-root{
+    border: none!important;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0;
+    color: $gray;
+    text-align: center!important;
+    vertical-align: middle;
+    padding: 6px;
+    svg{
+        fill: $gray;
+    }
+}
+#icon, svg {
+    width: 100%;
+    fill: lightseagreen;
+    height: 100%;
+}
+.topMenu {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 998;
     background-color: $white;
-    width:100vw;
-    box-shadow:$shadowRed ;
-
-    .topMenuItems{
-        width: 60%;
+    width: 100vw;
+    border-bottom: 1px solid $gray;
+    /*box-shadow:$shadowRed ;*/
+    .topMenuItems {
+        width: 100%;
         height: 100%;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: flex-end;
-        margin: 0px 0px 0px auto;
-        .searchBar{
+        justify-content: space-between;
+        margin: 0 0  0 auto;
+        .logo {
+            width: 100px;
+            margin: 20px 30px;
+            text-align: left!important;
+        }
+        form {
+            flex-grow: 2;
+            justify-content: center;
+            text-align: center;
+        }
+        .searchBar {
             width: 500px;
-            padding: 30px;
-            svg{
-                font-size: 1.5rem;
-                color: $grey;
-                margin-left: -50px;
-                padding-top: 5px;
+            padding: 15px;
+            svg {
+                font-size: 2.0rem;
+                color: $gray;
+                margin-left: -40px;
+                padding-top: 7px;
             }
-            .searchBox{
-                border: 0px solid $grey;
-                border-bottom: 1px solid $grey;
-                border-radius: 5px;
+            .searchBox {
+                border: 1px solid $gray;
+                border-radius: 10px;
+                padding-left: 20px;
                 width: 400px;
                 height: 40px;
+                color: $gray;
+                background-color: $body;
             }
-            .searchBox:active{
-                border: 1px solid $grey!important;
-
+            .searchBox:focus {
+                border: none;
             }
         }
-        .UserDetails{
+        .UserDetails {
             height: 100%;
-            width: 300px;
-            padding: 20px;
+            width: 350px;
+            padding: 10px;
+            .UserDp {
+               background-color: $quBeansBlue;
+                height: 30px;
+                width: 30px;
+                margin: auto;
+                border-radius: 50px;
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 1.2rem;
+                text-align: center;
+                padding: 5px;
 
-            .userDp{
-                background-position: center;
-                background-size: contain;
+
             }
-            .UserName{
-                font-family: inherit;
-                font-weight: 900;
+            .UserName {
+                font-size: 1.3rem;
+                font-weight: 600;
                 display: block;
-                margin-top: 5px;
+                margin: auto;
+                padding: 10px;
             }
-            .UserType{
+            .UserType {
                 display: block;
                 font-size: 0.8rem;
                 text-transform: uppercase;
             }
+            .signOut {
+                margin: auto ;
+                .signOutBtn {
+                    text-decoration: none;
+                    color: $grey;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    background-color:$gray;
+                }
+                .signOutBtn:hover {
+                    color: $quBeansBlue;
+                    background-color:$quBeansBlue50;
+                }
+             }
         }
-        .signOut{
-            padding: 30px;
+
+    }
+}
+.userHeader{
+    width: 110rem;
+    border-radius: 10px;
+    height: 15rem;
+    background-color:lightseagreen;
+    position: relative;
+    .profilepic{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 200px;
+        padding: 1rem;
+        background-color: $body;
+        position: absolute;
+        bottom: -5rem;
+        left:4rem;
+        .pic{
+            width: 100%;
             height: 100%;
-            width: 200px;
-            .signOutBtn{
-                text-decoration: none;
-                color: $myRideBlack;
-                font-size: 1.3rem;  
-            }
-            
+            border-radius: 200px;
         }
     }
 }
+.profileData{
+    margin: 5rem 0 0 0;
+    width: 110rem;
+    height: 10rem;
+    padding: 1rem 0 0 5rem;
+    .userName{
+        font-weight: 600;
+        color: lightseagreen;
+
+    }
+    .contactData{
+        font-weight: 400;
+        color: $grey;
+        .email,.phone{
+            color:lightseagreen;
+        }
+    }
+}
+.tabsWrapper{
+    margin:  0;
+    width: 110rem;
+    height: 10rem;
+    padding: 1rem 0 0 5rem;
+}
+
 /*
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    .sideBar {
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      background-color: rgba(255, 255, 255, 0.5);  
-      z-index: 999;
-    }
-    .warning {
-      display: none;
-    }
+.sideBar {
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+background-color: rgba(255, 255, 255, 0.5);  
+z-index: 999;
+}
+.warning {
+display: none;
+}
 }*/
-.DispatchForm{
+
+.DispatchForm {
     width: 400px;
     height: 700px;
     background-color: $white;
@@ -228,92 +434,105 @@ $shadowRed2:5px 12px 20px -10px rgba(80, 80, 80, 0.377);
     border: none;
     border-radius: 10px;
     box-shadow: $shadowRed2;
-
 }
 
-body{
-    background-color: $ghostWhite;
+body {
+    background-color: $body;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: $fontFamily;
 }
-.logo{
+
+.logo {
     width: 163px;
-    margin: 0px auto 60px;
+    margin: 0 auto 60px;
     text-align: center;
 }
-.box{
+
+.box {
     width: 500px;
-    margin: 0px auto 30px;
+    margin: 0 auto 30px;
     height: 60px;
 }
+
 .box:focus-visible {
     box-shadow: none;
 }
 
-.passBox{
+.passBox {
     border-right: none;
     border-left: none;
 }
-.btn-login{
+
+.btn-login {
     width: 334px;
     height: 42px;
-    background-color: $myRideRed;
+    background-color: $quBeansBlue;
     color: $white;
     border: none;
 }
 
-.fa_addon{
+.fa_addon {
     background-color: $white;
     border-right: none;
     text-align: center;
 }
-.form_area{
-    background-color:$white;
-    border-left: none;
-}
-.pass_toogle{
+
+.form_area {
     background-color: $white;
     border-left: none;
 }
-.disabled{
-    color: grey;
+
+.pass_toggle {
+    background-color: $white;
+    border-left: none;
 }
-.inputGroup{
-    margin: 10px 0px;
+
+.disabled {
+    color: $grey!important;
 }
-.FormHeading{
+.faIcon{
+    color:$quBeansBlue;
+    font-size: 1.3rem;
+}
+
+.inputGroup {
+    margin: 10px 0 ;
+}
+
+.FormHeading {
     font-family: inherit;
     font-weight: 700;
-    font-style: bold;
+    font-style: normal;
     font-size: 1.5rem;
 }
-.MapStats{
-    position:fixed;
+
+.MapStats {
+    position: fixed;
     display: flex;
     justify-content: flex-start;
     flex-flow: row nowrap;
     width: calc(100vw - 300px);
     height: 120px;
-    margin: 80px 0px 0px 250px;
+    margin: 80px 0 0  250px;
     padding: 20px;
-    background-color: none;
+    background-color: transparent;
     border-radius: 20px;
     z-index: 1000;
-    a{
+    a {
         text-decoration: none;
         width: 12%;
         min-width: 180px;
         height: 100%;
         margin-right: 20px;
     }
-    a:hover{
-        .col-md-3{
+    a:hover {
+        .col-md-3 {
             background-color: $ghostWhite;
             box-shadow: $shadowRed2;
         }
     }
-    .col-md-3{
+    .col-md-3 {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -324,30 +543,34 @@ body{
         border-radius: 10px;
         background-color: $white;
         box-shadow: $shadowRed;
-        
-        p{
-            margin: 0px;
-            padding: 0px;
-            
+        p {
+            margin: 0 ;
+            padding: 0 ;
         }
-        .cardContent{
+        .cardContent {
             font-weight: 900;
             font-size: 2.5rem;
             color: inherit;
         }
-        .title{
+        .title {
             font-size: 0.6rem;
             text-transform: uppercase;
-            color: $myRideBlack;
+            color: $quBeansBlack;
             margin-top: -10px;
         }
-        .cardIcon{
+        .cardIcon {
             vertical-align: middle;
             text-align: center;
             height: 100%;
             font-size: 2.0rem;
             color: inherit;
         }
-
+    }
+    .cityMenu {
+        box-shadow: $shadowRed!important;
+        padding: 10px 30px!important;
+    }
+    .cityMenu:hover {
+        box-shadow: $shadowRed2!important;
     }
 }

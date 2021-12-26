@@ -1,85 +1,478 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faThLarge, faUserCog} from "@fortawesome/free-solid-svg-icons";
+export const Controls=[
+  {
+    key: 'dashboard',
+    path: '/dashboard',
+    title: "Dashboard",
+    iconName:faThLarge,
+    iconType:"solid",
+    color:'gainsboro',
+    cname:'dashLink'
+  },
+  {
+    key: 'profile',
+    path: '/dashboard/profile',
+    title: "Profile",
+    iconName:faUserCog,
+    iconType:"solid",
+    color:'gainsboro'
+  },
 
-import { faUserFriends, faChartPie, faUsersCog, faCogs, faDatabase, faEye, faUserCog, faTh, faCar, faTaxi, faTachometerAlt, faNetworkWired } from '@fortawesome/free-solid-svg-icons';
+    ]
+export const Admin=[
+    {
+        key: 'petty-cash-vouchers',
+        path: '/dashboard/petty-cash-vouchers',
+        title: "PettyCashVouchers",
+        iconName:"spreadsheet",
+        iconType:"regular",
+      },
+      {
+        key: 'petty-cash-voucher-items',
+        path: '/dashboard/petty-cash-voucher-items',
+        title: "PettyCashVoucherItems",
+        iconName:"spreadsheet",
+        iconType:"regular",
+      },
+      {
+        key: 'countries',
+        path: '/dashboard/countries',
+        title: "Countries",
+        iconName:"spreadsheet",
+        iconType:"regular",
+      },]
 
-export const MenuItems=[
+export const Accounting=[
     {
-        title:'Eagle\'s Eye',
-        path:'/LiveMap',
-        icon:<FontAwesomeIcon icon={faEye}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Admin',
-        path:'/Admin',
-        icon:<FontAwesomeIcon icon={faUserCog}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Dashboard',
-        path:'/',
-        icon:<FontAwesomeIcon icon={faTh}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Drivers',
-        path:'/Drivers',
-        icon:<FontAwesomeIcon icon={faCar}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Riders',
-        path:'/Riders',
-        icon:<FontAwesomeIcon icon={faUserCog}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Dispatch',
-        path:'/Dispatch',
-        icon:<FontAwesomeIcon icon={faTaxi}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Trips',
-        path:'/Trips',
-        icon:<FontAwesomeIcon icon={faTachometerAlt}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Corporate',
-        path:'/Corporate',
-        icon:<FontAwesomeIcon icon={faNetworkWired}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Referrals',
-        path:'/Referrals',
-        icon:<FontAwesomeIcon icon={faUserFriends}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Statistics',
-        path:'/Statistics',
-        icon:<FontAwesomeIcon icon={faChartPie}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Customer Care',
-        path:'/CustomerCare',
-        icon:<FontAwesomeIcon icon={faUsersCog}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Download Data',
-        path:'/Data',
-        icon:<FontAwesomeIcon icon={faDatabase}/>,
-        cName:'nav-Link'
-    },
-    {
-        title:'Settings',
-        path:'/Settings',
-        icon:<FontAwesomeIcon icon={faCogs}/>,
-        cName:'nav-Link'
-    },
+        key: 'activities',
+        title: 'Activities',
+        path: '/dashboard/activities',
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'banks',
+        path: '/dashboard/banks',
+        title: "Banks",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'bank-account-numbers',
+        path: '/dashboard/bank-account-numbers',
+        title: "BankAccountNumbers",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'bank-account-transactions',
+        path: '/dashboard/bank-account-transactions',
+        title: "BankAccountTransactions",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'chart-of-accounts',
+        path: '/dashboard/chart-of-accounts',
+        title: "ChartOfAccounts",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'chart-of-accounts-groups',
+        path: '/dashboard/chart-of-accounts-groups',
+        title: "ChartOfAccountGroups",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'cheque-types',
+        path: '/dashboard/cheque-types',
+        title: "ChequeTypes",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'code-generators',
+        path: '/dashboard/code-generators',
+        title: "CodeGenerators",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'general-ledgers',
+        path: '/dashboard/general-ledgers',
+        title: "GeneralLedgers",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+
+      {
+        key: 'currencies',
+        path: '/dashboard/currencies',
+        title: "Currencies",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'mobile-service-providers',
+        path: '/dashboard/mobile-service-providers',
+        title: "MobileServiceProviders",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'organisations',
+        path: '/dashboard/organisations',
+        title: "Organisations",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'organisation-branches',
+        path: '/dashboard/organisation-branches',
+        title: "OrganisationBranches",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'regions',
+        path: '/dashboard/regions',
+        title: "Regions",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'sms-providers',
+        path: '/dashboard/sms-providers',
+        title: "SMSProviders",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'sms-templates',
+        path: '/dashboard/sms-templates',
+        title: "SMSTemplates",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'system-defaults',
+        path: '/dashboard/system-defaults',
+        title: "SystemDefaults",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'system-task-types',
+        path: '/dashboard/system-task-types',
+        title: "SystemTaskTypes",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'tariffs',
+        path: '/dashboard/tariffs',
+        title: "Tariffs",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'transaction-categories',
+        path: '/dashboard/transaction-categories',
+        title: "TransactionCategories",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'transaction-charges',
+        path: '/dashboard/transaction-charges',
+        title: "TransactionCharges",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'transaction-setups',
+        path: '/dashboard/transaction-setups',
+        title: "TransactionSetups",
+        iconName:"receipt",
+        iconType:"regular",
+        
+      },
+      {
+        key: 'pos-devices',
+        path: '/dashboard/pos-devices',
+        title: "PosDevices",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'tills',
+        path: '/dashboard/tills',
+        title: "Tills",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'till-allowed-hosts',
+        path: '/dashboard/till-allowed-hosts',
+        title: "TillAllowedHosts",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'till-client-secrets',
+        path: '/dashboard/till-client-secrets',
+        title: "TillClientSecrets",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'till-server-ips',
+        path: '/dashboard/till-server-ips',
+        title: "TillServerIPs",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'notifications',
+        path: '/dashboard/notifications',
+        title: "Notifications",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'disputes',
+        path: '/dashboard/disputes',
+        title: "Disputes",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'addresses',
+        path: '/dashboard/addresses',
+        title: "Addresses",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'audit-logs',
+        path: '/dashboard/audit-logs',
+        title: "AuditLogs",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'devices',
+        path: '/dashboard/devices',
+        title: "Devices",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'email-blacklists',
+        path: '/dashboard/email-blacklists',
+        title: "EmailBlackLists",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'file-storages',
+        path: '/dashboard/file-storages',
+        title: "FileStorages",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'login-models',
+        path: '/dashboard/login-models',
+        title: "LoginModels",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'payment-requests',
+        path: '/dashboard/payment-requests',
+        title: "PaymentRequests",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'phone-blacklists',
+        path: '/dashboard/phone-blacklists',
+        title: "PhoneBlackLists",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'sms-blacklists',
+        path: '/dashboard/sms-blacklists',
+        title: "SMSBlacklists",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'sms-model',
+        path: '/dashboard/sms-model',
+        title: "SMSModels",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'transactions',
+        path: '/dashboard/transactions',
+        title: "Transactions",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'staff',
+        path: '/dashboard/staff',
+        title: "StaffMembers",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'users',
+        path: '/dashboard/users',
+        title: "Users",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      {
+        key: 'roles',
+        path: '/dashboard/roles',
+        title: "Roles",
+        iconName:"receipt",
+        iconType:"regular",
+      },
+      
 ]
+
+export const Management=[
+    {
+        key: 'roles',
+        title: 'POS Devices',
+        path: '/dashboard/pos-devices',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'payment-method',
+        title: 'Payment Methods',
+        path: '/dashboard/payment-methods',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'cash-transactions',
+        title: 'CashTransactions',
+        path: '/dashboard/cash-transactions',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'merchant-invoice',
+        title: 'Merchant Invoices',
+        path: '/dashboard/merchant-invoice',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'merchant-transaction',
+        title: 'Merchant Transactions',
+        path: '/dashboard/merchant-transaction',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'bank-account',
+        title: 'Bank AccountS',
+        path: '/dashboard/bank-account',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'escrow-transaction',
+        title: 'Escrow Transactions',
+        path: '/dashboard/escrow-transaction',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'forex-data',
+        title: 'Forex Data',
+        path: '/dashboard/forex-data',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'standing-orders',
+        title: 'Standing Orders',
+        path: '/dashboard/standing-orders',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'list-emails',
+        title: 'Emails',
+        path: '/dashboard/emails-list',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'standing-orders-logs',
+        title: 'Standing Orders Log',
+        path: '/dashboard/standing-order-log',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'mobile-money-account',
+        title: 'Mobile-Money Accounts',
+        path: '/dashboard/mobile-money-account',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'user-payment-account',
+        title: 'User Payment Accounts',
+        path: '/dashboard/user-payment-account',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'user-transaction',
+        title: 'User Transactions',
+        path: '/dashboard/user-transaction',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'list-languages',
+        title: 'Languages',
+        path: '/dashboard/list-languages',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'login-request',
+        title: 'Login Request',
+        path: '/dashboard/login-request',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'c2b-request',
+        title: 'C2B Requests',
+        path: '/dashboard/c2b-request',
+        iconName:"file",
+        iconType:"regular",
+      },
+      {
+        key: 'signup-request',
+        title: 'Signup Request',
+        path: '/dashboard/signup-request',
+        iconName:"file",
+        iconType:"regular",
+      },]

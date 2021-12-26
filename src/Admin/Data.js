@@ -9,7 +9,7 @@ function Drivers() {
   
     
     useEffect(() => {
-      fetch("https://api.myride.ke/get_driver_locations/")
+      fetch("https://api.quBeans.ke/get_driver_locations/")
         .then(res => res.json())
         .then(
           (result) => {
